@@ -1,0 +1,15 @@
+# Ignore the entire build folder
+/build/
+
+# Ignore the sdkconfig file (often generated during build)
+/sdkconfig
+
+# Ignore environment setup scripts
+.env
+
+# Ignore any specific files that are generated
+# For example, some log files or other temporary files
+*.log
+*.elf
+*.bin
+*.map

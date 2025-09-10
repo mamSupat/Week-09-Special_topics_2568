@@ -1,0 +1,104 @@
+Command: c:\Espressif\esp-idf-v5.5\tools\python_env\idf5.5_py3.11_env\Scripts\python.exe c:\Espressif\esp-idf-v5.5\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\acer\Desktop\STC\LAB09\Week-09-Special_topics_2568\LEDControl\build\LEDControl.elf C:\Users\acer\Desktop\STC\LAB09\Week-09-Special_topics_2568\LEDControl\build\bootloader\bootloader.elf --force-color -m 'c:\Espressif\esp-idf-v5.5\tools\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'c:\Espressif\esp-idf-v5.5\tools\idf.py'
+)j����      : DIO
+I (41ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 10 2025 23:02:16[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a270h ( 41584) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a298 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0001a2c0 vaddr=3ffb0000 size=023e8h (  9192) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=0001c6b0 vaddr=40080000 size=03968h ( 14696) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=144bch ( 83132) map[0m
+[0;32mI (150) esp_image: segment 5: paddr=000344e4 vaddr=40083968 size=096a4h ( 38564) load[0m
+[0;32mI (172) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (172) boot: Disabling RNG early entropy source...[0m
+[0;32mI (182) cpu_start: Multicore app[0m
+[0;32mI (190) cpu_start: Pro cpu start user code[0m
+[0;32mI (191) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (191) app_init: Application information:[0m
+[0;32mI (191) app_init: Project name:     LEDControl[0m
+[0;32mI (195) app_init: App version:      9bc9b1a[0m
+[0;32mI (199) app_init: Compile time:     Sep 10 2025 23:01:58[0m
+[0;32mI (204) app_init: ELF file SHA256:  860ec72e4...[0m
+[0;32mI (208) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (212) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (216) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (220) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (224) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (235) heap_init: At 3FFB2CB0 len 0002D350 (180 KiB): DRAM[0m
+[0;32mI (241) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (246) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 4008D00C len 00012FF4 (75 KiB): IRAM[0m
+[0;32mI (258) spi_flash: detected chip: generic[0m
+[0;32mI (260) spi_flash: flash io: dio[0m
+[0;33mW (263) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (276) main_task: Started on CPU0[0m
+[0;32mI (286) main_task: Calling app_main()[0m
+[0;32mI (286) LED_CONTROL: ESP32 LED Control Demo Started[0m
+[0;32mI (286) LED_CONTROL: Initializing LED on GPIO 2[0m
+[0;32mI (286) LED_CONTROL: LED initialization completed[0m
+[0;32mI (286) LED_CONTROL: LED ON[0m
+[0;32mI (296) LED_CONTROL: LED blink task created[0m
+[0;32mI (296) main_task: Returned from app_main()[0m
+[0;32mI (1296) LED_CONTROL: LED OFF[0m
+[0;32mI (2296) LED_CONTROL: LED ON[0m
+[0;32mI (3296) LED_CONTROL: LED OFF[0m
+[0;32mI (4296) LED_CONTROL: LED ON[0m
+[0;32mI (5296) LED_CONTROL: LED OFF[0m
+[0;32mI (6296) LED_CONTROL: LED ON[0m
+[0;32mI (7296) LED_CONTROL: LED OFF[0m
+[0;32mI (8296) LED_CONTROL: LED ON[0m
+[0;32mI (9296) LED_CONTROL: LED OFF[0m
+[0;32mI (10296) LED_CONTROL: LED ON[0m
+[0;32mI (11296) LED_CONTROL: LED OFF[0m
+[0;32mI (12296) LED_CONTROL: LED ON[0m
+[0;32mI (13296) LED_CONTROL: LED OFF[0m
+[0;32mI (14296) LED_CONTROL: LED ON[0m
+[0;32mI (15296) LED_CONTROL: LED OFF[0m
+[0;32mI (16296) LED_CONTROL: LED ON[0m
+[0;32mI (17296) LED_CONTROL: LED OFF[0m
+[0;32mI (18296) LED_CONTROL: LED ON[0m
+[0;32mI (19296) LED_CONTROL: LED OFF[0m
+[0;32mI (20296) LED_CONTROL: LED ON[0m
+[0;32mI (21296) LED_CONTROL: LED OFF[0m
+[0;32mI (22296) LED_CONTROL: LED ON[0m
+[0;32mI (23296) LED_CONTROL: LED OFF[0m
+[0;32mI (24296) LED_CONTROL: LED ON[0m
+[0;32mI (25296) LED_CONTROL: LED OFF[0m
+[0;32mI (26296) LED_CONTROL: LED ON[0m
+[0;32mI (27296) LED_CONTROL: LED OFF[0m
+[0;32mI (28296) LED_CONTROL: LED ON[0m
+[0;32mI (29296) LED_CONTROL: LED OFF[0m
+[0;32mI (30296) LED_CONTROL: LED ON[0m
+[0;32mI (31296) LED_CONTROL: LED OFF[0m
+[0;32mI (32296) LED_CONTROL: LED ON[0m
+[0;32mI (33296) LED_CONTROL: LED OFF[0m
+[0;32mI (34296) LED_CONTROL: LED ON[0m
+[0;32mI (35296) LED_CONTROL: LED OFF[0m
+[0;32mI (36296) LED_CONTROL: LED ON[0m
+[0;32mI (37296) LED_CONTROL: LED OFF[0m
+[0;32mI (38296) LED_CONTROL: LED ON[0m
+[0;32mI (39296) LED_CONTROL: LED OFF[0m
+[0;32mI (40296) LED_CONTROL: LED ON[0m
